@@ -1,0 +1,42 @@
+{
+  "name": "ai-hunt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "seed": "ts-node src/seeds/index.ts",
+    "migration:generate": "typeorm-ts-node-commonjs migration:generate -d src/ormconfig.ts src/migrations/init",
+    "migration:create": "typeorm-ts-node-commonjs migration:create src/migrations/init",
+    "migration:run": "typeorm-ts-node-commonjs migration:run -d src/ormconfig.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.10.2",
+    "@types/pg": "^8.15.6",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "pbkdf2": "^3.1.5",
+    "pg": "^8.16.3",
+    "reflect-metadata": "^0.2.2",
+    "tsx": "^4.21.0",
+    "typeorm": "^0.3.28"
+  }
+}
