@@ -5,8 +5,8 @@
 
 > Инструкция по запуску
 > 
-> `git clone https://github.com/exexeeeex/node-test-app.git`
-> `cd ./node-test-app`
+> `git clone https://github.com/exexeeeex/node-test-app.git`<br/>
+> `cd ./node-test-app`<br/>
 > `docker-compose -f ./docker-compose --verbose up --build`
 
 ## API будет доступно по адресу http://localhost:3000/api
